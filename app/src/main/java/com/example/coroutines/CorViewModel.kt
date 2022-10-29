@@ -39,7 +39,9 @@ class CorViewModel : ViewModel() {
         GlobalScope.launch {
             while (integer.value == 2){
                 delay(1000)
-                inc()
+                if(integer.value==2){
+                    inc()
+                }
             }
         }
     }
